@@ -17,7 +17,7 @@ public class TextoRedacao implements EstruturaTexto{
 
     @Override
     public String obterEstrutura() {
-        return "TextoRedacao{" + "introducao=" + introducao + ", desenvolvimento1=" + desenvolvimento1 + ", desenvolvimento2=" + desenvolvimento2 + ", conclusao=" + conclusao + '}';
+        return "Texto Redacao [" + "introducao : " + introducao + ", desenvolvimento1 : " + desenvolvimento1 + ", desenvolvimento2 : " + desenvolvimento2 + ", conclusao : " + conclusao + ']';
     }
 
 }

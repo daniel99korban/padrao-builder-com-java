@@ -9,16 +9,16 @@ import objetos.strategy.EstruturaTexto;
  * 
  */
 public class RedacaoBuilder implements Builder{
-    private String texto;
+    // private String texto;
     private String tema;
     private String palavras;
     // poder ser uma interface para estrategy(redação, musica, artigo ou poema);
     private EstruturaTexto estruturaTexto;
     private String descricao;
     
-    public void textMotivador(String texto){
+    /*public void textMotivador(String texto){
         this.texto = texto;
-    }
+    }*/
 
     @Override
     public void inserirTema(String tema) {
@@ -40,8 +40,8 @@ public class RedacaoBuilder implements Builder{
         this.descricao = descricao;
     }
     
-    public Redacao getResutado(){
-        return new Redacao(texto, tema, palavras, estruturaTexto, descricao);
+    public Redacao getResultado(){
+        return new Redacao(/*texto, */tema, palavras, estruturaTexto, descricao);
     }
     
 }

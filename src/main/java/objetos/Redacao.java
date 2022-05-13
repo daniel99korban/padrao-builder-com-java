@@ -8,7 +8,7 @@ import objetos.strategy.EstruturaTexto;
 
 public class Redacao {
     
-    private String texto;
+    // private String texto;
     private String tema;
     private String palavras;
     private String estruturaTexto;
@@ -22,8 +22,8 @@ public class Redacao {
      * @param estruturaTexto introdução desenvolvimento 1, 2 e/ou 3, conclusão
      * @param descricao um breve resumo que descrevao texto como um todo
      */
-    public Redacao(String texto, String tema, String palavras, EstruturaTexto estruturaTexto, String descricao) {
-        this.texto = texto;
+    public Redacao(/*String texto,*/String tema, String palavras, EstruturaTexto estruturaTexto, String descricao) {
+        // this.texto = texto;
         this.tema = tema;
         this.palavras = palavras;
         this.estruturaTexto = estruturaTexto.obterEstrutura();
@@ -31,9 +31,9 @@ public class Redacao {
         this.nota = 1000;
     }
 
-    public String getTexto() {
+    /*public String getTexto() {
         return texto;
-    }
+    }*/
 
     public String getTema() {
         return tema;
@@ -58,5 +58,9 @@ public class Redacao {
     public void setNota(double nota) {
         this.nota = nota;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Redacao\n" + /*"texto = " + texto +*/ "tema = " + tema + ",\n palavras = " + palavras + ",\n estrutura Texto = " + estruturaTexto + ",\n descricao = " + descricao + ", \nnota = " + nota;
+    }
 }

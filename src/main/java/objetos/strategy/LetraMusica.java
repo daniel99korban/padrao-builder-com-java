@@ -25,7 +25,7 @@ public class LetraMusica implements EstruturaTexto{
 
     @Override
     public String obterEstrutura() {
-        return "letraMusica{" + "introducao=" + introducao + ", verso=" + verso + ", preRefrao=" + preRefrao + ", refrao=" + refrao + ", ponte=" + ponte + '}';
+        return "letra Musica [" + "introducao : " + introducao + ", verso : " + verso + ", preRefrao : " + preRefrao + ", refrao : " + refrao + ", ponte : " + ponte + ']';
     }
     
 }

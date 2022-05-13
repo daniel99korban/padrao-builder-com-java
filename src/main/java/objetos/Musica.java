@@ -58,4 +58,11 @@ public class Musica {
         this.descricao = descricao;
     }
     
+    // exibir resultados
+
+    @Override
+    public String toString() {
+        return "Musica:\n" + "Tema = " + tema + ", \nPalavras = " + palavras + ", \nEstrutura da Musica = " + estruturaMusica + ", \nDescricao = " + descricao;
+    }
+    
 }
