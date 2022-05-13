@@ -2,14 +2,12 @@ package com.mycompany.aplicando_padrao_builder;
 
 // para usar na construção do objeto
 import objetos.Redacao;
-
+import objetos.strategy.EstruturaTexto;
 /**
  *
  * @author Daniel_Korban
  * 
  */
-import objetos.strategy.EstruturaTexto;
-
 public class RedacaoBuilder implements Builder{
     private String texto;
     private String tema;
@@ -19,7 +17,7 @@ public class RedacaoBuilder implements Builder{
     private String descricao;
     
     public void textMotivador(String texto){
-        this.texto = texto;  
+        this.texto = texto;
     }
 
     @Override

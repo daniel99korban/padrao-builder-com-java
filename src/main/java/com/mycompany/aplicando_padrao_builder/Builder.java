@@ -16,4 +16,4 @@ public interface Builder {
     void descrever(String descricao);//falar sobre o trabalho feito(musica, poema, artigo ou redação).
 }
 
-// seguir implemntação em: https://refactoring.guru/pt-br/design-patterns/builder/java/example
+// seguir implementação em: https://refactoring.guru/pt-br/design-patterns/builder/java/example
